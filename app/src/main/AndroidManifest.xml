@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lenovo.geeknews">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".app.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.ZhuActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.gold.activity.GoldActivity" />
+        <activity
+            android:name=".ui.zhihu.activity.ZhuhuActivity"
+            android:label="@string/title_activity_zhuhu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.weixin.activity.WeiXinActivity" />
+        <activity
+            android:name=".ui.gank.activity.GankActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.gank.activity.GirlActivity" />
+        <activity android:name=".ui.zhihu.activity.TimeActivity"></activity>
+    </application>
+
+</manifest>
