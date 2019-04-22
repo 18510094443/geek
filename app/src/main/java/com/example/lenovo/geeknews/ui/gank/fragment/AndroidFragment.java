@@ -57,7 +57,7 @@ public class AndroidFragment extends BaseFragment implements GankView {
 
     @Override
     protected void initData() {
-        ((GankPresenter) presenter).getData("Android", 20, 1);
+        ((GankPresenter) presenter).getData(type, 20, 1);
         ((GankPresenter) presenter).getData(20);
     }
 

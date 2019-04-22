@@ -57,7 +57,7 @@ public class WebFragment extends BaseFragment implements GankView {
 
     @Override
     protected void initData() {
-        ((GankPresenter) presenter).getData("前端", 20, 1);
+        ((GankPresenter) presenter).getData(type, 20, 1);
         ((GankPresenter) presenter).getData(20);
     }
 

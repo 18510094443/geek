@@ -52,15 +52,14 @@ public class V2exitemFragment extends BaseFragment {
     private String commentUser;
     private String text1;
 
-    public V2exitemFragment(String ss) {
-        this.ss = ss;
+    public V2exitemFragment(String s) {
+        this.ss=s;
     }
 
     @Override
     protected void initData() {
         v2exBeans = new ArrayList<>();
         getData();
-
     }
 
     private void getData() {

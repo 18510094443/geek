@@ -1,13 +1,10 @@
 package com.example.lenovo.geeknews.ui.collect.fragment;
 
 
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
-import com.example.lenovo.geeknews.R;
+import android.support.v4.app.Fragment;
+import android.view.View;
+
 import com.example.lenovo.geeknews.base.BaseFragment;
 import com.example.lenovo.geeknews.base.BasePresenter;
 

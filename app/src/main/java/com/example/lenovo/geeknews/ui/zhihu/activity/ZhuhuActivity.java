@@ -1,14 +1,12 @@
 package com.example.lenovo.geeknews.ui.zhihu.activity;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.Toolbar;
 import android.webkit.WebView;
 import android.widget.ImageView;
-
 import com.bumptech.glide.Glide;
 import com.example.lenovo.geeknews.R;
 import com.example.lenovo.geeknews.base.BaseActivity;
@@ -44,6 +42,7 @@ public class ZhuhuActivity extends BaseActivity implements RIBaoView {
         String title = intent.getStringExtra("title");
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(title);
+//        toolbar.setNavigationIcon(R.mipmap.ic_close);
         ((ZhiHuPresenter) presenter).getData(id + "");
 }
 

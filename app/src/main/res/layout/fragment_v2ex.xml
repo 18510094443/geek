@@ -7,11 +7,25 @@
     android:layout_height="match_parent"
     tools:context=".ui.v2ex.fragment.V2exFragment">
 
-<android.support.design.widget.TabLayout
-    android:layout_width="match_parent"
-    android:layout_height="58dp"
-    app:tabMode="scrollable"
-    android:id="@+id/tab"></android.support.design.widget.TabLayout>
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TabLayout
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabTextColor="@color/c_cecece"
+            app:tabMode="scrollable"
+            android:id="@+id/tab"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"/>
+
+        <ImageView
+            android:id="@+id/img"
+            android:src="@mipmap/ic_menu"
+            android:layout_width="28dp"
+            android:layout_height="60dp" />
+    </LinearLayout>
     <android.support.v4.view.ViewPager
         android:id="@+id/vp"
         android:layout_width="match_parent"

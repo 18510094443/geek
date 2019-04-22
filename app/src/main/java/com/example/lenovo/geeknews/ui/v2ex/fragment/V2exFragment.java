@@ -1,31 +1,24 @@
 package com.example.lenovo.geeknews.ui.v2ex.fragment;
-
-
-import android.os.Bundle;
+import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-
+import android.widget.ImageView;
 import com.example.lenovo.geeknews.R;
 import com.example.lenovo.geeknews.base.BaseFragment;
 import com.example.lenovo.geeknews.base.BasePresenter;
-
+import com.example.lenovo.geeknews.ui.v2ex.activity.V2exActivity;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
 import java.io.IOException;
 import java.util.ArrayList;
-
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
 /**
@@ -33,14 +26,14 @@ import butterknife.Unbinder;
  */
 public class V2exFragment extends BaseFragment {
 
-
     public String url = "https://www.v2ex.com/";
     Unbinder unbinder;
     @BindView(R.id.tab)
     TabLayout tab;
     @BindView(R.id.vp)
     ViewPager vp;
-    Unbinder unbinder1;
+    @BindView(R.id.img)
+    ImageView img;
     private ArrayList<String> list;
     private ArrayList<String> herf;
 
@@ -49,6 +42,14 @@ public class V2exFragment extends BaseFragment {
         list = new ArrayList<>();
         herf = new ArrayList<>();
         getData();
+
+        img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), V2exActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -114,5 +115,4 @@ public class V2exFragment extends BaseFragment {
     protected int getLayout() {
         return R.layout.fragment_v2ex;
     }
-
 }

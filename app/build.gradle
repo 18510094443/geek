@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.example.lenovo.geeknews"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -67,5 +67,8 @@ dependencies {
     implementation 'org.jsoup:jsoup:1.11.3'
 
     implementation 'org.greenrobot:eventbus:3.1.1'
+
+    //粘性头部
+    implementation 'com.github.qdxxxx:StickyHeaderDecoration:1.0.1'
 
 }

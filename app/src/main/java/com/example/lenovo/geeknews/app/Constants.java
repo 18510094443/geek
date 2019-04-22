@@ -1,7 +1,5 @@
 package com.example.lenovo.geeknews.app;
-
 import android.os.Environment;
-
 import java.io.File;
 
 /*public class Constants {

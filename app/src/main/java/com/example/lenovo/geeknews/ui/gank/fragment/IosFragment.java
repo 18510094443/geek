@@ -57,7 +57,7 @@ public class IosFragment extends BaseFragment implements GankView {
 
     @Override
     protected void initData() {
-        ((GankPresenter) presenter).getData("iOS", 20, 1);
+        ((GankPresenter) presenter).getData(type, 20, 1);
         ((GankPresenter) presenter).getData(20);
     }
 

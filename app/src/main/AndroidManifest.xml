@@ -14,16 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ui.ZhuActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity android:name=".ui.gold.activity.GoldActivity" />
         <activity
             android:name=".ui.zhihu.activity.ZhuhuActivity"
@@ -34,7 +36,8 @@
             android:name=".ui.gank.activity.GankActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.gank.activity.GirlActivity" />
-        <activity android:name=".ui.zhihu.activity.TimeActivity"></activity>
+        <activity android:name=".ui.zhihu.activity.TimeActivity" />
+        <activity android:name=".ui.v2ex.activity.V2exActivity"></activity>
     </application>
 
 </manifest>
