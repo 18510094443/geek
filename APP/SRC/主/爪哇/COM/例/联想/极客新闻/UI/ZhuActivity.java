@@ -1,6 +1,6 @@
 package com.example.lenovo.geeknews.ui;
 
-
+//傻子高浩然
 //李旭阳
 
 import android.app.Dialog;
